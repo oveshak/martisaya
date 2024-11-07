@@ -1,0 +1,158 @@
+Add custom styles if needed
+
+/* Cart Styling */
+.cart {
+    margin-top: 100px;
+}
+
+/* Cart item list styling */
+.cart-items-title {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr;
+    gap: 2px;
+    color: gray;
+    align-items: center;
+    font-weight: 500;
+    font-size: max(1vw, 12px);
+}
+
+.cart-items-item {
+    margin: 10px 0;
+    color: #000;
+    font-weight: normal;
+}
+
+.cart-items-item img {
+    width: 50px;
+    border-radius: 10px;
+}
+
+.cart hr {
+    height: 1px;
+    border: none;
+    background-color: #e2e2e2;
+}
+
+/* Cart bottom */
+.cart-bottom {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw, 20px);
+}
+
+.cart-total {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+
+.cart-total hr {
+    margin: 10px 0;
+}
+
+.cart-total button {
+    text-transform: uppercase;
+    background-color: tomato;
+    transition: .1s ease-in-out;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 10px;
+    width: max(10vw,200px);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cart-total button:hover {
+    background-color: rgb(242, 69, 39);
+}
+
+.cart-promocode {
+    flex: 1;
+}
+
+.cart-promocode p {
+    color: #555;
+}
+
+.cart-promocode-input {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.cart-promocode-input input {
+    background-color: #eaeaea;
+    border: none;
+    width: max(10vw, 180px);
+    height: 30px;
+    outline: none;
+    font-size: 20px;
+    padding: 2px;
+}
+
+.cart-promocode-input button {
+    padding: 8px 10px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background-color: #6c66ff;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+}
+
+.cart-promocode-input button:hover {
+    background-color: #433eea;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.quantity-btn {
+    padding: 0 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    height: 100%;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart-bottom {
+        flex-direction: column-reverse;
+    }
+
+    .cart-promocode {
+        justify-content: start;
+    }
+
+    .cart-promocode-input input {
+        width: max(70vw, 180px);
+    }
+}
+
+@media (max-width: 500px) {
+    .cart-items-title {
+        grid-template-columns: 1fr 1.5fr 0.5fr 1fr 0.6fr 0.5fr;
+    }
+}

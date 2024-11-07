@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Nikosh';
+    src: url('../fonts/Nikosh.woff') format('woff'),
+         url('../fonts/Nikosh.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Shishir';
+    src: url('../fonts/shishir.woff') format('woff'),
+         url('../fonts/shishir.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nakkhatrya';
+    src: url('../fonts/nakkhatrya.woff') format('woff'),
+         url('../fonts/nakkhatrya.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+:root {
+    --sada: #F9F1BF;
+	--green:#33C659;
+    --holud:#F1CC18;
+    --neel:#1B266B;
+}
+
+.bg-gr1{
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+}
+body {
+    font-family: 'Nikosh', sans-serif;
+	color: #2D2A32;
+	font-size: 1.25em;
+}
+
+.font-nakkh{
+    font-family: 'Nakkhatrya', sans-serif !important;
+
+}
+.font-shishir{
+    font-family: 'Shishir', sans-serif !important;
+
+}
+.font-nikosh {
+    font-family: 'Nikosh', sans-serif !important;
+}
+
+.clip-leftpoint{
+    clip-path: polygon(20% 0, 100% 0%, 100% 100%, 20% 100%, 0% 50%);
+  }
+  .shadow-w{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .shadow-inset{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+
+
+
+  .fade-in {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+  }
+  
+  .fade-in.show {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+  }
+  
+/* Modal Container Styling */
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* Modal Content Styling */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden; /* Hide overflow here */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make the modal content scrollable */
+.modal-body {
+    overflow-y: auto; /* Scrollable area */
+    max-height: 60vh; /* Adjust based on the modal size */
+    padding: 20px;
+}
+
+/* Thin scrollbar styling */
+.modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Sticky Header Styling */
+.modal-header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+    padding: 20px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* Ensure body doesn't scroll when modal is open */
+body.modal-open {
+    overflow: hidden;
+}
+
+.firs-class::first-letter{
+    font-size: 50px;
+}

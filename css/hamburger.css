@@ -1,0 +1,44 @@
+    /* Custom styles for slider transitions */
+    .slider {
+        transition: transform 0.3s ease-in-out;
+      }
+  
+      .hidden-slider {
+        transform: translateX(100%);
+      }
+  
+      .visible-slider {
+        transform: translateX(0%);
+      }
+
+      @media only screen and (max-width: 400px) {
+      .product-card{
+        width: 350px;
+        height: 450px;
+      }
+      #gtid-present{
+      place-items: center
+      }
+      .sf{
+        margin-top: 20px;
+      }
+      .bsb{
+        margin-top: 50px;
+      }
+      .sssa{
+        padding:  20px 0;
+      }
+      .rsdc{
+        margin-top: 30px;
+      }
+      .gs{
+        width: 300px;
+      }
+     
+    }
+    .bsb{
+      margin-top: 50px;
+    }
+    .mbs{
+      margin-top: 60px;
+    }
